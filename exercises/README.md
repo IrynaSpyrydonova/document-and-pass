@@ -3,7 +3,7 @@
 <!-- END TITLE -->
 
 <!-- BEGIN TOC -->
-> 7/3/2020, 3:35:30 PM
+> 7/9/2020, 4:40:31 PM
 
 - [0-hello-world](#0-hello-world)
 - [1-remove-from-array](#1-remove-from-array)
@@ -45,16 +45,10 @@ console.log(greeting); // 'Hello, World!'
 **Test Report**
 ```
 Started
-.F..F.
+......
 
-Failures:
-1) Hello says hello world
-.    Expected '' to equal 'Hello, World!'..
 
-2) Hello says hello toys
-.    Expected '' to equal 'Hello, toys!'..
-
-2 specs, 2 failures
+2 specs, 0 failures
 Finished in 0.009 seconds
 
 ```
@@ -68,37 +62,30 @@ Finished in 0.009 seconds
 
 <a name="removeFromArray"></a>
 
-## removeFromArray()
+## removeFromArray(arr, ...manyMoreArgs) ⇒ <code>array</code>
+This function removes the arguments from the given array
 
+
+**Returns**: <code>array</code> - new array, that doesn't include the arguments  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| arr | <code>array</code> | array to remove from |
+| ...manyMoreArgs | <code>array</code> | arguments that have to be removed |
+
+**Example**  
+```js
+const newArr = removeFromArray([1, 2, 3, 4], 7, 2));
+console.log(newArr); // [1, 3, 4]
+```
 **Test Report**
 ```
 Started
-.F..F..F..F..F..F..F.
+.....................
 
-Failures:
-1) removeFromArray removes a single value
-.    Expected undefined to equal [ 1, 2, 4 ]..
 
-2) removeFromArray removes multiple values
-.    Expected undefined to equal [ 1, 4 ]..
-
-3) removeFromArray ignores non present values
-.    Expected undefined to equal [ 1, 2, 3, 4 ]..
-
-4) removeFromArray ignores non present values, but still works
-.    Expected undefined to equal [ 1, 3, 4 ]..
-
-5) removeFromArray can remove all values
-.    Expected undefined to equal [  ]..
-
-6) removeFromArray works with strings
-.    Expected undefined to equal [ 2, 'ho' ]..
-
-7) removeFromArray only removes same type
-.    Expected undefined to equal [ 1, 2 ]..
-
-7 specs, 7 failures
-Finished in 0.008 seconds
+7 specs, 0 failures
+Finished in 0.009 seconds
 
 ```
 
@@ -111,37 +98,30 @@ Finished in 0.008 seconds
 
 <a name="repeatString"></a>
 
-## repeatString()
+## repeatString(string, num) ⇒ <code>string</code>
+This function repeats the string a given number of times
 
+
+**Returns**: <code>string</code> - new string, that repeats previous string given number of times  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| string | <code>string</code> | string to repeat |
+| num | <code>number</code> | how many times to repeat |
+
+**Example**  
+```js
+const newString = repeatString('hey', 3);
+console.log(newString); // 'heyheyhey'
+```
 **Test Report**
 ```
 Started
-.F..F..F..F..F..F..F.
+.....................
 
-Failures:
-1) repeatString repeats the string
-.    Expected undefined to equal 'heyheyhey'..
 
-2) repeatString repeats the string many times
-.    Expected undefined to equal 'heyheyheyheyheyheyheyheyheyhey'..
-
-3) repeatString repeats the string 1 times
-.    Expected undefined to equal 'hey'..
-
-4) repeatString repeats the string 0 times
-.    Expected undefined to equal ''..
-
-5) repeatString returns ERROR with negative numbers
-.    Expected undefined to equal 'ERROR'..
-
-6) repeatString repeats the string a random amount of times
-.    TypeError: Cannot read property 'match' of undefined.
-
-7) repeatString works with blank strings
-.    Expected undefined to equal ''..
-
-7 specs, 7 failures
-Finished in 0.007 seconds
+7 specs, 0 failures
+Finished in 0.006 seconds
 
 ```
 
@@ -154,28 +134,29 @@ Finished in 0.007 seconds
 
 <a name="reverseString"></a>
 
-## reverseString()
+## reverseString(string) ⇒ <code>string</code>
+This function that returns its input, reversed
 
+
+**Returns**: <code>string</code> - reversed given string  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| string | <code>string</code> | string to reverse |
+
+**Example**  
+```js
+const stringToReverse = reverseString('hello there');
+console.log(stringToReverse); // 'ereht olleh'
+```
 **Test Report**
 ```
 Started
-.F..F..F..F.
+............
 
-Failures:
-1) reverseString reverses single word
-.    Expected undefined to equal 'olleh'..
 
-2) reverseString reverses multiple words
-.    Expected undefined to equal 'ereht olleh'..
-
-3) reverseString works with numbers and punctuation
-.    Expected undefined to equal '!cba !321'..
-
-4) reverseString works with blank strings
-.    Expected undefined to equal ''..
-
-4 specs, 4 failures
-Finished in 0.003 seconds
+4 specs, 0 failures
+Finished in 0.004 seconds
 
 ```
 
@@ -188,34 +169,30 @@ Finished in 0.003 seconds
 
 <a name="sumAll"></a>
 
-## sumAll()
+## sumAll(start, end) ⇒ <code>number</code>
+This function  takes 2 integers and returns the sum of every number between(and including) them.
 
+
+**Returns**: <code>number</code> - sum of all numbers between start and end  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| start | <code>number</code> | number to start from to calculate |
+| end | <code>number</code> | number to end to calculate |
+
+**Example**  
+```js
+const total = sumAll(1, 4);
+console.log(total); // 10
+```
 **Test Report**
 ```
 Started
-.F..F..F..F..F..F.
+..................
 
-Failures:
-1) sumAll sums numbers within the range
-.    Expected undefined to equal 10..
 
-2) sumAll works with large numbers
-.    Expected undefined to equal 8002000..
-
-3) sumAll works with larger number first
-.    Expected undefined to equal 7626..
-
-4) sumAll returns ERROR with negative numbers
-.    Expected undefined to equal 'ERROR'..
-
-5) sumAll returns ERROR with non-number parameters
-.    Expected undefined to equal 'ERROR'..
-
-6) sumAll returns ERROR with non-number parameters
-.    Expected undefined to equal 'ERROR'..
-
-6 specs, 6 failures
-Finished in 0.005 seconds
+6 specs, 0 failures
+Finished in 0.006 seconds
 
 ```
 
@@ -228,43 +205,29 @@ Finished in 0.005 seconds
 
 <a name="fibonacci"></a>
 
-## fibonacci()
+## fibonacci(n) ⇒ <code>number</code>
+This function returns a specific number of the fibonacci sequence (every number after the first two is the sum of the two preceding ones)
 
+
+**Returns**: <code>number</code> - element with index n from our Fibonacci sequence array  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| n | <code>number</code> | index of element from Fibonacci sequence array |
+
+**Example**  
+```js
+const fibSequence = fibonacci(6)
+console.log(fibSequence); // 8
+```
 **Test Report**
 ```
 Started
-.F..F..F..F..F..F..F..F..F.
+...........................
 
-Failures:
-1) fibonacci works
-.    Expected undefined to equal 3..
 
-2) fibonacci works
-.    Expected undefined to equal 8..
-
-3) fibonacci works
-.    Expected undefined to equal 55..
-
-4) fibonacci works
-.    Expected undefined to equal 610..
-
-5) fibonacci works
-.    Expected undefined to equal 75025..
-
-6) fibonacci doesn't accept negatives
-.    Expected undefined to equal 'OOPS'..
-
-7) fibonacci DOES accept strings
-.    Expected undefined to equal 1..
-
-8) fibonacci DOES accept strings
-.    Expected undefined to equal 1..
-
-9) fibonacci DOES accept strings
-.    Expected undefined to equal 21..
-
-9 specs, 9 failures
-Finished in 0.008 seconds
+9 specs, 0 failures
+Finished in 0.009 seconds
 
 ```
 
@@ -277,19 +240,29 @@ Finished in 0.008 seconds
 
 <a name="getTheTitles"></a>
 
-## getTheTitles()
+## getTheTitles(obj) ⇒ <code>array</code>
+This function  takes the array of objects and returns an array of specific properties of that objects
 
+
+**Returns**: <code>array</code> - array of specific properties of the objects  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| obj | <code>array</code> | array of objects |
+
+**Example**  
+```js
+const titles = getTheTitles(books))
+console.log(titles); // ['Book', 'Book2']
+```
 **Test Report**
 ```
 Started
-.F.
+...
 
-Failures:
-1) getTheTitles gets titles
-.    Expected undefined to equal [ 'Book', 'Book2' ]..
 
-1 spec, 1 failure
-Finished in 0.001 seconds
+1 spec, 0 failures
+Finished in 0.002 seconds
 
 ```
 
@@ -302,34 +275,29 @@ Finished in 0.001 seconds
 
 <a name="leapYears"></a>
 
-## leapYears()
+## leapYears(year) ⇒ <code>boolean</code>
+Thi function determines whether or not a given year is a leap years
 
+
+**Returns**: <code>boolean</code> - true or false  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| year | <code>number</code> | a year to check |
+
+**Example**  
+```js
+const year = leapYears(1997)
+console.log(year); // false
+```
 **Test Report**
 ```
 Started
-.F..F..F..F..F..F.
+..................
 
-Failures:
-1) leapYears works with non century years
-.    Expected undefined to equal true..
 
-2) leapYears works with non century years
-.    Expected undefined to equal false..
-
-3) leapYears works with ridiculously futuristic non century years
-.    Expected undefined to equal true..
-
-4) leapYears works with century years
-.    Expected undefined to equal false..
-
-5) leapYears works with century years
-.    Expected undefined to equal true..
-
-6) leapYears works with century years
-.    Expected undefined to equal false..
-
-6 specs, 6 failures
-Finished in 0.005 seconds
+6 specs, 0 failures
+Finished in 0.004 seconds
 
 ```
 
@@ -342,31 +310,29 @@ Finished in 0.005 seconds
 
 <a name="palindromes"></a>
 
-## palindromes()
+## palindromes(str) ⇒ <code>boolean</code>
+This function determines whether or not a given string is a palindrome
 
+
+**Returns**: <code>boolean</code> - true or false  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| str | <code>string</code> | a given string to check |
+
+**Example**  
+```js
+const strToCheck = palindromes('Racecar!')
+console.log(strToCheck); // true
+```
 **Test Report**
 ```
 Started
-.F..F..F..F..F.
+...............
 
-Failures:
-1) palindromes works with single words
-.    Expected undefined to equal true..
 
-2) palindromes works with punctuation
-.    Expected undefined to equal true..
-
-3) palindromes works with multiple words
-.    Expected undefined to equal true..
-
-4) palindromes works with multiple words
-.    Expected undefined to equal true..
-
-5) palindromes doesn't just always return true
-.    Expected undefined to equal false..
-
-5 specs, 5 failures
-Finished in 0.005 seconds
+5 specs, 0 failures
+Finished in 0.006 seconds
 
 ```
 
@@ -379,37 +345,30 @@ Finished in 0.005 seconds
 
 <a name="caesar"></a>
 
-## caesar()
+## caesar(str, amount) ⇒ <code>string</code>
+This function takes a string to be encoded and a shift factor and then returns the encoded string
 
+
+**Returns**: <code>string</code> - encoded string  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| str | <code>string</code> | a given string to be encoded |
+| amount | <code>number</code> | fixed number of positions down the alphabet |
+
+**Example**  
+```js
+const strToEncode = caesar('Aaa', 1)
+console.log(strToEncode); // 'Bbb'
+```
 **Test Report**
 ```
 Started
-.F..F..F..F..F..F..F.
+.....................
 
-Failures:
-1) caesar works with single letters
-.    Expected undefined to equal 'B'..
 
-2) caesar works with words
-.    Expected undefined to equal 'Bbb'..
-
-3) caesar works with phrases
-.    Expected undefined to equal 'Mjqqt, Btwqi!'..
-
-4) caesar works with negative shift
-.    Expected undefined to equal 'Hello, World!'..
-
-5) caesar wraps
-.    Expected undefined to equal 'A'..
-
-6) caesar works with large shift factors
-.    Expected undefined to equal 'Ebiil, Tloia!'..
-
-7) caesar works with large negative shift factors
-.    Expected undefined to equal 'Ebiil, Tloia!'..
-
-7 specs, 7 failures
-Finished in 0.006 seconds
+7 specs, 0 failures
+Finished in 0.008 seconds
 
 ```
 
@@ -431,16 +390,16 @@ Started
 
 Failures:
 1) findTheOldest finds the oldest person!
-.    TypeError: Cannot read property 'name' of undefined.
+.    TypeError: Cannot read property 'forEach' of undefined.
 
 2) findTheOldest finds the oldest person if someone is still living
-.    TypeError: Cannot read property 'name' of undefined.
+.    TypeError: Cannot read property 'forEach' of undefined.
 
 3) findTheOldest finds the oldest person if the OLDEST is still living
-.    TypeError: Cannot read property 'name' of undefined.
+.    TypeError: Cannot read property 'forEach' of undefined.
 
 3 specs, 3 failures
-Finished in 0.003 seconds
+Finished in 0.011 seconds
 
 ```
 
@@ -489,7 +448,7 @@ Failures:
 .    Expected undefined to equal 'ethay ickquay ownbray oxfay'..
 
 9 specs, 9 failures
-Finished in 0.007 seconds
+Finished in 0.016 seconds
 
 ```
 
@@ -529,7 +488,7 @@ Failures:
 .    Expected undefined to equal 'snake_case_is_awesome'..
 
 6 specs, 6 failures
-Finished in 0.005 seconds
+Finished in 0.007 seconds
 
 ```
 
