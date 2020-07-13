@@ -3,7 +3,6 @@
 <!-- END TITLE -->
 
 <!-- BEGIN TOC -->
-> 7/9/2020, 4:40:31 PM
 
 - [0-hello-world](#0-hello-world)
 - [1-remove-from-array](#1-remove-from-array)
@@ -44,6 +43,8 @@ console.log(greeting); // 'Hello, World!'
 ```
 **Test Report**
 ```
+7/12/2020, 11:38:20 AM
+
 Started
 ......
 
@@ -65,7 +66,6 @@ Finished in 0.009 seconds
 ## removeFromArray(arr, ...manyMoreArgs) ⇒ <code>array</code>
 This function removes the arguments from the given array
 
-
 **Returns**: <code>array</code> - new array, that doesn't include the arguments  
 
 | Param | Type | Description |
@@ -84,8 +84,10 @@ Started
 .....................
 
 
+
 7 specs, 0 failures
 Finished in 0.009 seconds
+
 
 ```
 
@@ -100,7 +102,6 @@ Finished in 0.009 seconds
 
 ## repeatString(string, num) ⇒ <code>string</code>
 This function repeats the string a given number of times
-
 
 **Returns**: <code>string</code> - new string, that repeats previous string given number of times  
 
@@ -137,7 +138,6 @@ Finished in 0.006 seconds
 ## reverseString(string) ⇒ <code>string</code>
 This function that returns its input, reversed
 
-
 **Returns**: <code>string</code> - reversed given string  
 
 | Param | Type | Description |
@@ -169,9 +169,9 @@ Finished in 0.004 seconds
 
 <a name="sumAll"></a>
 
+
 ## sumAll(start, end) ⇒ <code>number</code>
 This function  takes 2 integers and returns the sum of every number between(and including) them.
-
 
 **Returns**: <code>number</code> - sum of all numbers between start and end  
 
@@ -190,9 +190,8 @@ console.log(total); // 10
 Started
 ..................
 
-
 6 specs, 0 failures
-Finished in 0.006 seconds
+
 
 ```
 
@@ -205,9 +204,9 @@ Finished in 0.006 seconds
 
 <a name="fibonacci"></a>
 
+
 ## fibonacci(n) ⇒ <code>number</code>
 This function returns a specific number of the fibonacci sequence (every number after the first two is the sum of the two preceding ones)
-
 
 **Returns**: <code>number</code> - element with index n from our Fibonacci sequence array  
 
@@ -257,6 +256,8 @@ console.log(titles); // ['Book', 'Book2']
 ```
 **Test Report**
 ```
+7/12/2020, 11:38:21 AM
+
 Started
 ...
 
@@ -277,7 +278,6 @@ Finished in 0.002 seconds
 
 ## leapYears(year) ⇒ <code>boolean</code>
 Thi function determines whether or not a given year is a leap years
-
 
 **Returns**: <code>boolean</code> - true or false  
 
@@ -313,7 +313,6 @@ Finished in 0.004 seconds
 ## palindromes(str) ⇒ <code>boolean</code>
 This function determines whether or not a given string is a palindrome
 
-
 **Returns**: <code>boolean</code> - true or false  
 
 | Param | Type | Description |
@@ -345,9 +344,9 @@ Finished in 0.006 seconds
 
 <a name="caesar"></a>
 
+
 ## caesar(str, amount) ⇒ <code>string</code>
 This function takes a string to be encoded and a shift factor and then returns the encoded string
-
 
 **Returns**: <code>string</code> - encoded string  
 
@@ -385,6 +384,8 @@ Finished in 0.008 seconds
 
 **Test Report**
 ```
+7/12/2020, 11:38:21 AM
+
 Started
 .F..F..F.
 
@@ -399,7 +400,9 @@ Failures:
 .    TypeError: Cannot read property 'forEach' of undefined.
 
 3 specs, 3 failures
-Finished in 0.011 seconds
+
+Finished in 0.004 seconds
+
 
 ```
 
@@ -416,6 +419,8 @@ Finished in 0.011 seconds
 
 **Test Report**
 ```
+7/12/2020, 11:38:21 AM
+
 Started
 .F..F..F..F..F..F..F..F..F.
 
@@ -448,7 +453,9 @@ Failures:
 .    Expected undefined to equal 'ethay ickquay ownbray oxfay'..
 
 9 specs, 9 failures
-Finished in 0.016 seconds
+
+Finished in 0.008 seconds
+
 
 ```
 
@@ -465,6 +472,8 @@ Finished in 0.016 seconds
 
 **Test Report**
 ```
+7/12/2020, 11:38:21 AM
+
 Started
 .F..F..F..F..F..F.
 
