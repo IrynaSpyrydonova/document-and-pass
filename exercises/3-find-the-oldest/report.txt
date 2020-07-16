@@ -1,19 +1,8 @@
-7/12/2020, 11:38:21 AM
+7/16/2020, 4:13:41 PM
 
 Started
-.F..F..F.
+.........
 
-Failures:
-1) findTheOldest finds the oldest person!
-.    TypeError: Cannot read property 'forEach' of undefined.
 
-2) findTheOldest finds the oldest person if someone is still living
-.    TypeError: Cannot read property 'forEach' of undefined.
-
-3) findTheOldest finds the oldest person if the OLDEST is still living
-.    TypeError: Cannot read property 'forEach' of undefined.
-
-3 specs, 3 failures
-
-Finished in 0.004 seconds
-
+3 specs, 0 failures
+Finished in 0.005 seconds

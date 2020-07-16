@@ -1,26 +1,8 @@
-7/12/2020, 11:38:21 AM
+7/16/2020, 4:13:41 PM
 
 Started
-.F..F..F..F..F..F.
+..................
 
-Failures:
-1) snakeCase works with simple lowercased phrases
-.    Expected undefined to equal 'hello_world'..
 
-2) snakeCase works with Caps and punctuation
-.    Expected undefined to equal 'hello_world'..
-
-3) snakeCase works with longer phrases
-.    Expected undefined to equal 'this_is_the_song_that_never_ends'..
-
-4) snakeCase works with camel case
-.    Expected undefined to equal 'snake_case'..
-
-5) snakeCase works with kebab case
-.    Expected undefined to equal 'snake_case'..
-
-6) snakeCase works with WTF case
-.    Expected undefined to equal 'snake_case_is_awesome'..
-
-6 specs, 6 failures
-Finished in 0.007 seconds
+6 specs, 0 failures
+Finished in 0.006 seconds

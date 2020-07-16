@@ -1,37 +1,8 @@
-7/12/2020, 11:38:21 AM
+7/16/2020, 4:13:41 PM
 
 Started
-.F..F..F..F..F..F..F..F..F.
+...........................
 
-Failures:
-1) #translate translates a word beginning with a vowel
-.    Expected undefined to equal 'appleay'..
 
-2) #translate translates a word beginning with a consonant
-.    Expected undefined to equal 'ananabay'..
-
-3) #translate translates a word beginning with two consonants
-.    Expected undefined to equal 'errychay'..
-
-4) #translate translates two words
-.    Expected undefined to equal 'eatay iepay'..
-
-5) #translate translates a word beginning with three consonants
-.    Expected undefined to equal 'eethray'..
-
-6) #translate counts "sch" as a single phoneme
-.    Expected undefined to equal 'oolschay'..
-
-7) #translate counts "qu" as a single phoneme
-.    Expected undefined to equal 'ietquay'..
-
-8) #translate counts "qu" as a consonant even when its preceded by a consonant
-.    Expected undefined to equal 'aresquay'..
-
-9) #translate translates many words
-.    Expected undefined to equal 'ethay ickquay ownbray oxfay'..
-
-9 specs, 9 failures
-
-Finished in 0.008 seconds
-
+9 specs, 0 failures
+Finished in 0.011 seconds

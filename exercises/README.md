@@ -3,6 +3,7 @@
 <!-- END TITLE -->
 
 <!-- BEGIN TOC -->
+> 7/16/2020, 4:29:49 PM
 
 - [0-hello-world](#0-hello-world)
 - [1-remove-from-array](#1-remove-from-array)
@@ -43,14 +44,14 @@ console.log(greeting); // 'Hello, World!'
 ```
 **Test Report**
 ```
-7/12/2020, 11:38:20 AM
+7/16/2020, 4:13:41 PM
 
 Started
 ......
 
 
 2 specs, 0 failures
-Finished in 0.009 seconds
+Finished in 0.011 seconds
 
 ```
 
@@ -66,6 +67,7 @@ Finished in 0.009 seconds
 ## removeFromArray(arr, ...manyMoreArgs) ⇒ <code>array</code>
 This function removes the arguments from the given array
 
+
 **Returns**: <code>array</code> - new array, that doesn't include the arguments  
 
 | Param | Type | Description |
@@ -80,14 +82,14 @@ console.log(newArr); // [1, 3, 4]
 ```
 **Test Report**
 ```
+7/16/2020, 4:13:41 PM
+
 Started
 .....................
 
 
-
 7 specs, 0 failures
-Finished in 0.009 seconds
-
+Finished in 0.008 seconds
 
 ```
 
@@ -103,6 +105,7 @@ Finished in 0.009 seconds
 ## repeatString(string, num) ⇒ <code>string</code>
 This function repeats the string a given number of times
 
+
 **Returns**: <code>string</code> - new string, that repeats previous string given number of times  
 
 | Param | Type | Description |
@@ -117,12 +120,14 @@ console.log(newString); // 'heyheyhey'
 ```
 **Test Report**
 ```
+7/16/2020, 4:13:41 PM
+
 Started
 .....................
 
 
 7 specs, 0 failures
-Finished in 0.006 seconds
+Finished in 0.008 seconds
 
 ```
 
@@ -138,6 +143,7 @@ Finished in 0.006 seconds
 ## reverseString(string) ⇒ <code>string</code>
 This function that returns its input, reversed
 
+
 **Returns**: <code>string</code> - reversed given string  
 
 | Param | Type | Description |
@@ -151,6 +157,8 @@ console.log(stringToReverse); // 'ereht olleh'
 ```
 **Test Report**
 ```
+7/16/2020, 4:13:41 PM
+
 Started
 ............
 
@@ -169,9 +177,9 @@ Finished in 0.004 seconds
 
 <a name="sumAll"></a>
 
-
 ## sumAll(start, end) ⇒ <code>number</code>
 This function  takes 2 integers and returns the sum of every number between(and including) them.
+
 
 **Returns**: <code>number</code> - sum of all numbers between start and end  
 
@@ -187,11 +195,14 @@ console.log(total); // 10
 ```
 **Test Report**
 ```
+7/16/2020, 4:13:41 PM
+
 Started
 ..................
 
-6 specs, 0 failures
 
+6 specs, 0 failures
+Finished in 0.007 seconds
 
 ```
 
@@ -204,9 +215,9 @@ Started
 
 <a name="fibonacci"></a>
 
-
 ## fibonacci(n) ⇒ <code>number</code>
 This function returns a specific number of the fibonacci sequence (every number after the first two is the sum of the two preceding ones)
+
 
 **Returns**: <code>number</code> - element with index n from our Fibonacci sequence array  
 
@@ -221,12 +232,14 @@ console.log(fibSequence); // 8
 ```
 **Test Report**
 ```
+7/16/2020, 4:13:41 PM
+
 Started
 ...........................
 
 
 9 specs, 0 failures
-Finished in 0.009 seconds
+Finished in 0.011 seconds
 
 ```
 
@@ -256,7 +269,7 @@ console.log(titles); // ['Book', 'Book2']
 ```
 **Test Report**
 ```
-7/12/2020, 11:38:21 AM
+7/16/2020, 4:13:41 PM
 
 Started
 ...
@@ -279,6 +292,7 @@ Finished in 0.002 seconds
 ## leapYears(year) ⇒ <code>boolean</code>
 Thi function determines whether or not a given year is a leap years
 
+
 **Returns**: <code>boolean</code> - true or false  
 
 | Param | Type | Description |
@@ -292,12 +306,14 @@ console.log(year); // false
 ```
 **Test Report**
 ```
+7/16/2020, 4:13:41 PM
+
 Started
 ..................
 
 
 6 specs, 0 failures
-Finished in 0.004 seconds
+Finished in 0.007 seconds
 
 ```
 
@@ -313,6 +329,7 @@ Finished in 0.004 seconds
 ## palindromes(str) ⇒ <code>boolean</code>
 This function determines whether or not a given string is a palindrome
 
+
 **Returns**: <code>boolean</code> - true or false  
 
 | Param | Type | Description |
@@ -326,12 +343,14 @@ console.log(strToCheck); // true
 ```
 **Test Report**
 ```
+7/16/2020, 4:13:41 PM
+
 Started
 ...............
 
 
 5 specs, 0 failures
-Finished in 0.006 seconds
+Finished in 0.005 seconds
 
 ```
 
@@ -344,9 +363,9 @@ Finished in 0.006 seconds
 
 <a name="caesar"></a>
 
-
 ## caesar(str, amount) ⇒ <code>string</code>
 This function takes a string to be encoded and a shift factor and then returns the encoded string
+
 
 **Returns**: <code>string</code> - encoded string  
 
@@ -362,12 +381,14 @@ console.log(strToEncode); // 'Bbb'
 ```
 **Test Report**
 ```
+7/16/2020, 4:13:41 PM
+
 Started
 .....................
 
 
 7 specs, 0 failures
-Finished in 0.008 seconds
+Finished in 0.007 seconds
 
 ```
 
@@ -380,29 +401,31 @@ Finished in 0.008 seconds
 
 <a name="findTheOldest"></a>
 
-## findTheOldest()
+## findTheOldest(arr) ⇒ <code>string</code>
+This function takes an array of objects to be checked for conditions and returns the property value, that met the given conditions.
 
+
+**Returns**: <code>string</code> - property value of the object  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| arr | <code>array</code> | a given array of objects |
+
+**Example**  
+```js
+const personToFind = findTheOldest(people).name)
+console.log(personToFind); // 'Ray'
+```
 **Test Report**
 ```
-7/12/2020, 11:38:21 AM
+7/16/2020, 4:13:41 PM
 
 Started
-.F..F..F.
+.........
 
-Failures:
-1) findTheOldest finds the oldest person!
-.    TypeError: Cannot read property 'forEach' of undefined.
 
-2) findTheOldest finds the oldest person if someone is still living
-.    TypeError: Cannot read property 'forEach' of undefined.
-
-3) findTheOldest finds the oldest person if the OLDEST is still living
-.    TypeError: Cannot read property 'forEach' of undefined.
-
-3 specs, 3 failures
-
-Finished in 0.004 seconds
-
+3 specs, 0 failures
+Finished in 0.005 seconds
 
 ```
 
@@ -415,47 +438,31 @@ Finished in 0.004 seconds
 
 <a name="translate"></a>
 
-## translate()
+## translate(str) ⇒ <code>string</code>
+This function takes a string to be translated according to the "pig-latin" game rules and returns the translated string
 
+
+**Returns**: <code>string</code> - translated string  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| str | <code>string</code> | a given string to be translated |
+
+**Example**  
+```js
+const strToTranslate = translate(`eat pie`)
+console.log(strToTranslate); // 'eatay iepay'
+```
 **Test Report**
 ```
-7/12/2020, 11:38:21 AM
+7/16/2020, 4:13:41 PM
 
 Started
-.F..F..F..F..F..F..F..F..F.
+...........................
 
-Failures:
-1) #translate translates a word beginning with a vowel
-.    Expected undefined to equal 'appleay'..
 
-2) #translate translates a word beginning with a consonant
-.    Expected undefined to equal 'ananabay'..
-
-3) #translate translates a word beginning with two consonants
-.    Expected undefined to equal 'errychay'..
-
-4) #translate translates two words
-.    Expected undefined to equal 'eatay iepay'..
-
-5) #translate translates a word beginning with three consonants
-.    Expected undefined to equal 'eethray'..
-
-6) #translate counts "sch" as a single phoneme
-.    Expected undefined to equal 'oolschay'..
-
-7) #translate counts "qu" as a single phoneme
-.    Expected undefined to equal 'ietquay'..
-
-8) #translate counts "qu" as a consonant even when its preceded by a consonant
-.    Expected undefined to equal 'aresquay'..
-
-9) #translate translates many words
-.    Expected undefined to equal 'ethay ickquay ownbray oxfay'..
-
-9 specs, 9 failures
-
-Finished in 0.008 seconds
-
+9 specs, 0 failures
+Finished in 0.011 seconds
 
 ```
 
@@ -468,36 +475,31 @@ Finished in 0.008 seconds
 
 <a name="snakeCase"></a>
 
-## snakeCase()
+## snakeCase(str) ⇒ <code>string</code>
+This function takes a string to convert phrases and words into snake case.
 
+
+**Returns**: <code>string</code> - converted string  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| str | <code>string</code> | a given string to be converted |
+
+**Example**  
+```js
+const strToConvert = snakeCase('This is the song that never ends....')
+console.log(strToConvert); // 'this_is_the_song_that_never_ends'
+```
 **Test Report**
 ```
-7/12/2020, 11:38:21 AM
+7/16/2020, 4:13:41 PM
 
 Started
-.F..F..F..F..F..F.
+..................
 
-Failures:
-1) snakeCase works with simple lowercased phrases
-.    Expected undefined to equal 'hello_world'..
 
-2) snakeCase works with Caps and punctuation
-.    Expected undefined to equal 'hello_world'..
-
-3) snakeCase works with longer phrases
-.    Expected undefined to equal 'this_is_the_song_that_never_ends'..
-
-4) snakeCase works with camel case
-.    Expected undefined to equal 'snake_case'..
-
-5) snakeCase works with kebab case
-.    Expected undefined to equal 'snake_case'..
-
-6) snakeCase works with WTF case
-.    Expected undefined to equal 'snake_case_is_awesome'..
-
-6 specs, 6 failures
-Finished in 0.007 seconds
+6 specs, 0 failures
+Finished in 0.006 seconds
 
 ```
 
